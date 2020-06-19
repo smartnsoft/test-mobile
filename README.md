@@ -50,7 +50,7 @@ L'idée est d'avoir, au démarrage de l'application, un **splashscreen**, puis, 
 * un écran "connecté" : la Home
 
 Le login peut tout à fait être mocké, il est cependant nécessaire de feindre un appel réseau en utilisant par exemple un :
-`Future.delayed(Duration(seconds: 1));`
+> DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0) {}
 
 L'application doit mettre en place une **connexion persistante**.
 Ce sera donc au moment du splashscreen que l'on vérifiera si l'utilisateur est connecté ou non, et qu'on affichera la vue correspondante.
