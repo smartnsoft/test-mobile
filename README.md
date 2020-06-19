@@ -5,7 +5,7 @@
 
 ## Introduction
 
-Ce test a pour objectif d'évaluer les compétences d'un candidat développeur sur le framework Flutter.
+Ce test a pour objectif d'évaluer les compétences d'un candidat développeur sur iOS.
 Il sera demandé au candidat de réaliser une petite application avec certaines fonctionnalités précises, listées ci-dessous.
 
 > Le candidat est entièrement libre de l'architecture choisie, des normes de codes mises en place ainsi que des packages utilisés ou non.
@@ -14,13 +14,12 @@ En revanche, les choix devront être argumentés dans un fichier `arguments.md` 
 
 ## Evaluation
 
-Etant donné que le candidat est libre de ses choix, nous estimons que l'application livrée est conforme à sa vision de Flutter et du développement mobile en général.
+Etant donné que le candidat est libre de ses choix, nous estimons que l'application livrée est conforme à sa vision du développement mobile en général.
 
 De notre côté, nous évaluerons le résultat sous différents aspects :
 
 * respect du fonctionnel attendu et des consignes
-* qualité du code Flutter
-* qualité du code Dart
+* qualité du code Swift
 * architecture mise en place par rapport à la problématique
 * maintenabilité de la solution
 * responsivité de l'interface graphique sur différentes tailles de téléphone
@@ -59,6 +58,7 @@ Ce sera donc au moment du splashscreen que l'on vérifiera si l'utilisateur est 
 ### 2. Une fois l'utilisateur connecté
 
 La Home de l'application se compose en **2 écrans** portés par une **BottomBar** :
+> Vous pouvez utiliser une UITabBarController native pour l'exercice.
 
 * une double liste des livres qui amènent vers un détail
 * la liste des favoris qui amènent vers un détail
@@ -98,8 +98,15 @@ Bien que cette application présente déjà de nombreux défis intéressants et 
 * ajout d'une déconnexion
 Il serait intéressant d'avoir une manière de se déconnecter de l'application à tout moment (et donc d'effacer la persistance)
 
-* ajout de l'état favoris (ou non) dans la liste
-Ajouter un petit état "favoris" ou "non favoris" dans la liste des livres (voir maquettes).
+* ajout de l'état favoris (ou non) dans la liste Ajouter un petit état "favoris" ou "non favoris" dans la liste des livres (voir maquettes).
 
 * persister les favoris
 L'idée est de garder en mémoire l'état des favoris et donc de les retrouver même après un redémarrage de l'application.
+
+* ajout d'un système de gestion de base de données en local
+Permettre à l'utilisateur d'accéder à l'application en mode offline.
+
+* ajout du Reactive dans l'application,
+modifier votre code en ajoutant du RxSwift, proposer des solutions pertinentes et maintenable. Détaillez vos actions dans `arguments.md`
+
+* Ajout de Firebase Analytics & Firebase crashlytics.
