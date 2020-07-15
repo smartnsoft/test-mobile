@@ -1,11 +1,18 @@
 
-# Tests de recrutement iOS
+# Tests de recrutement mobile
 
 <img src="https://raw.githubusercontent.com/smartnsoft/flutter-test/master/documentation/splash.png" width="120" height="260" hspace="20"/> <img src="https://raw.githubusercontent.com/smartnsoft/flutter-test/master/documentation/login.png" width="120" height="260" hspace="20"/> <img src="https://raw.githubusercontent.com/smartnsoft/flutter-test/master/documentation/list.png" width="120" height="260" hspace="20"/> <img src="https://raw.githubusercontent.com/smartnsoft/flutter-test/master/documentation/favorites.png" width="120" height="260" hspace="20"/> <img src="https://raw.githubusercontent.com/smartnsoft/flutter-test/master/documentation/detail.png" width="120" height="260" hspace="20"/>
 
+## Pré-requis
+
+Test android: Kotlin
+
+Test iOS: Swift
+
+
 ## Introduction
 
-Ce test a pour objectif d'évaluer les compétences d'un candidat développeur sur iOS.
+Ce test a pour objectif d'évaluer les compétences d'un candidat développeur mobile.
 Il sera demandé au candidat de réaliser une petite application avec certaines fonctionnalités précises, listées ci-dessous.
 
 > Le candidat est entièrement libre de l'architecture choisie, des normes de codes mises en place ainsi que des packages utilisés ou non.
@@ -19,7 +26,7 @@ Etant donné que le candidat est libre de ses choix, nous estimons que l'applica
 De notre côté, nous évaluerons le résultat sous différents aspects :
 
 * respect du fonctionnel attendu et des consignes
-* qualité du code Swift
+* qualité du code 
 * architecture mise en place par rapport à la problématique
 * maintenabilité de la solution
 * responsivité de l'interface graphique sur différentes tailles de téléphone
@@ -89,6 +96,10 @@ Il est attendu qu'au retour sur la liste des favoris, cet élément ne soit donc
 > Il n'est pas demandé de persister les favoris dans l'application.
 > Ceux-ci pourront donc être vide à chaque démarrage de l'application.
 
+#### c. Ajout d'un système de gestion de base de données en local
+
+Permettre à l'utilisateur d'accéder à l'application en mode offline.
+
 ## Aller plus loin
 
 Nous avons donc résumé plus haut toutes les fonctionnalités attendues, la méthodologie d'évaluation et les contraintes (aucune finalement, mis à part le respect des maquettes et guidelines demandées).
@@ -102,9 +113,6 @@ Il serait intéressant d'avoir une manière de se déconnecter de l'application 
 
 * persister les favoris
 L'idée est de garder en mémoire l'état des favoris et donc de les retrouver même après un redémarrage de l'application.
-
-* ajout d'un système de gestion de base de données en local
-Permettre à l'utilisateur d'accéder à l'application en mode offline.
 
 * ajout du Reactive dans l'application,
 modifier votre code en ajoutant du RxSwift, proposer des solutions pertinentes et maintenable. Détaillez vos actions dans `arguments.md`
