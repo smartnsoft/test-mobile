@@ -7,7 +7,7 @@
 
 Test android: Kotlin
 
-Test iOS: Swift
+Test iOS: Swift, utilisation des xibs demandés
 
 
 ## Introduction
